@@ -1,0 +1,696 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #222831;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.navigation a:hover {
+  color: #00adb5;
+}
+
+hr {
+  opacity: 10%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.projectTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.klm {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    order: 2;
+}
+.ttt{
+  width: 110px;
+  height: 100px;
+  display: flex;
+}
+
+
+.arrow {
+  position: absolute;
+  transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.heroSub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+    align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 3rem;
+  color: #eeeeee;
+    align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 4rem;
+  color: #00adb5;
+    align-items: center;
+  justify-content: center;
+}
+.heroBtns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.hireMe {
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.cv {
+  background-color: rgba(57, 62, 70, 0.75);
+  color: #eeeeee;
+  border-radius: 24px;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto;
+  max-width: 1200px;
+  gap: 10rem;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.textTitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 2rem;
+}
+.aboutName {
+  color: #eeeeee;
+    align-items: center;
+  justify-content: center;
+}
+.aboutTitle {
+  color: #00adb5;
+    align-items: center;
+  justify-content: center;
+}
+.aboutMePar {
+  text-align: justify;
+  color: white;
+}
+
+.works {
+  background-image: url("assets/svg/background.svg");
+  padding: 10rem 10rem;
+  margin: 5rem 0rem;
+}
+.worksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  font-size: 2rem;
+    align-items: center;
+  justify-content: center;
+}
+.works ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.works li {
+  border-radius: 16px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem 4rem;
+}
+.works li img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.works li :hover {
+  transform: scale(1.5);
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.contactTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+  gap: 20rem;
+}
+.contact h3,
+.contact a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.emailAndPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: cyan;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  color: #eeeeee;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .heroImg {
+    width: 400px;
+  }
+  .name,
+  .title {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  .aboutMe {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .textContainer {
+    align-items: center;
+    margin: 0rem 5rem;
+    gap: 1rem;
+  }
+  .aboutName,
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .light {
+    width: 60px;
+  }
+  .aboutMeImg {
+    width: 400px;
+  }
+  .works {
+    padding: 0;
+  }
+  .worksContainer {
+    padding: 5rem 0rem;
+    gap: 3rem;
+  }
+  .projectTitle {
+    margin-left: 1rem;
+  }
+  .works ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contactContainer {
+    margin: 10rem 5rem;
+    gap: 2rem;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+}
+
+
+/* ==============================
+   Mobile size & layout adjustment
+   ============================== */
+
+@media (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    width: calc(100% - 32px);
+    margin: 1.2rem auto;
+    max-width: none;
+  }
+
+  .navigation ul {
+    gap: 0.8rem;
+  }
+
+  .navigation a {
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    width: calc(100% - 32px);
+    margin: 2.8rem auto;
+    max-width: none;
+    gap: 1.5rem;
+  }
+
+  .projectTitle {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .klm {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ttt {
+    width: 90px;
+    height: 80px;
+  }
+
+  .heroSub {
+    width: 100%;
+  }
+
+  .name {
+    font-size: clamp(1.7rem, 8vw, 2.3rem);
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 9vw, 2.7rem);
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  .heroBtns {
+    gap: 0.6rem;
+    margin-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hireMe,
+  .cv {
+    padding: 0.55rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .aboutMe {
+    width: calc(100% - 32px);
+    margin: 3rem auto;
+    max-width: none;
+    gap: 1.5rem;
+  }
+
+  .textContainer {
+    width: 100%;
+    margin: 0;
+    gap: 0.8rem;
+  }
+
+  .textTitle {
+    font-size: 1.45rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .aboutName,
+  .aboutTitle {
+    font-size: 1.45rem;
+  }
+
+  .aboutMePar {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    text-align: right;
+  }
+
+  .aboutMeImg {
+    width: min(320px, 85vw);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .works {
+    width: 100%;
+    padding: 3.5rem 1rem;
+    margin: 3rem 0;
+  }
+
+  .worksContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .projectTitle {
+    width: 100%;
+    margin: 0;
+    font-size: 1.45rem;
+    text-align: center;
+  }
+
+  .works ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .works li {
+    width: min(100%, 340px);
+    padding: 0.8rem;
+  }
+
+  .works li img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .contactContainer {
+    width: calc(100% - 32px);
+    margin: 4rem auto;
+    max-width: none;
+    gap: 1.5rem;
+  }
+
+  .contactTitle {
+    font-size: 1.45rem;
+  }
+
+  .contact {
+    width: 100%;
+    margin-right: 0;
+    gap: 1rem;
+  }
+
+  .emailAndPhone {
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .socialMedia {
+    gap: 1rem;
+  }
+
+  .socialMedia a {
+    padding: 0.75rem;
+  }
+
+  .socialMedia img {
+    width: 22px;
+    height: 22px;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra-small phones */
+* (max-width: 380px) {
+
+  header {
+    width: calc(100% - 24px);
+  }
+
+  .navigation ul {
+    gap: 0.5rem;
+  }
+
+  .navigation a {
+    font-size: 0.65rem;
+  }
+
+  .hero,
+  .aboutMe,
+  .contactContainer {
+    width: calc(100% - 24px);
+  }
+
+  .klm {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.55rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .works {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .works li {
+    width: min(100%, 300px);
+  }
+}
+/* =========================
+   ضبط الموقع للجوال
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 94%;
+        max-width: none;
+        margin: 20px auto;
+    }
+
+    .hero {
+        width: 94%;
+        max-width: none;
+        margin: 45px auto;
+        gap: 20px;
+    }
+
+    .name {
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .heroBtns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutMe {
+        width: 94%;
+        max-width: none;
+        margin: 60px auto;
+        gap: 30px;
+    }
+
+    .textContainer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .textTitle {
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .aboutMePar {
+        width: 100%;
+        font-size: 14px;
+        line-height: 2;
+        text-align: right;
+    }
+
+    .aboutMeImg {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .works {
+        width: 100%;
+        padding: 60px 15px;
+        margin: 50px 0;
+    }
+
+    .worksContainer {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .projectTitle {
+        width: 100%;
+        margin: 0 0 30px;
+        font-size: 24px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .works ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .works li {
+        width: 92%;
+        max-width: 360px;
+        padding: 15px;
+    }
+
+    .works li img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .contactContainer {
+        width: 94%;
+        max-width: none;
+        margin: 60px auto;
+    }
+
+    .contact {
+        width: 100%;
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    .socialMedia {
+        gap: 15px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+}

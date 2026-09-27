@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تموينات الشفاء</title>
+
+    <!-- ملف CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- خط عربي -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <main class="page">
+
+        <!-- الهيدر -->
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    SH
+                </div>
+
+                <div>
+                    <h1>تموينات الشفاء</h1>
+                    <span>جودة • ثقة • تميز</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- المحتوى الرئيسي -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="welcome">
+                    أهلاً وسهلاً بك
+                </span>
+
+                <h2>
+                    اطلب اللي تحتاجه
+                    <br>
+                    <strong>ونوصله لك</strong>
+                </h2>
+
+                <p>
+                    اكتب طلبك بالتفصيل، وأرسل لنا بياناتك،
+                    وبنتواصل معك عبر الواتساب لتأكيد الطلب.
+                </p>
+
+            </div>
+
+
+            <!-- بطاقة الطلب -->
+            <div class="order-card">
+
+                <div class="card-top">
+
+                    <div class="card-icon">
+                        🛒
+                    </div>
+
+                    <div>
+                        <h3>أرسل طلبك</h3>
+                        <p>عبّي البيانات التالية</p>
+                    </div>
+
+                </div>
+
+
+                <form id="orderForm">
+
+                    <!-- الاسم -->
+                    <div class="field">
+
+                        <label for="name">
+                            الاسم الكريم
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                👤
+                            </span>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="اكتب اسمك"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- الهاتف -->
+                    <div class="field">
+
+                        <label for="phone">
+                            رقم الهاتف
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                📱
+                            </span>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="أدخل الرقم "
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- الطلب -->
+                    <div class="field">
+
+                        <label for="order">
+                            طلبك
+                        </label>
+
+                        <div class="textarea-wrapper">
+
+                            <span class="textarea-icon">
+                                📦
+                            </span>
+
+                            <textarea
+                                id="order"
+                                placeholder="اكتب المنتجات والكميات التي تريدها..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- العنوان -->
+                    <div class="field">
+
+                        <label for="address">
+                            موقع التوصيل
+                            <small>(اختياري)</small>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                📍
+                            </span>
+
+                            <input
+                                type="text"
+                                id="address"
+                                placeholder="اكتب موقعك أو عنوانك"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- زر الإرسال -->
+                    <button
+                        type="submit"
+                        class="send-button"
+                    >
+
+                        <span class="whatsapp-icon">
+                            ☎
+                        </span>
+
+                        <span>
+                            إرسال الطلب عبر واتساب
+                        </span>
+
+                        <span class="arrow">
+                            ←
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <div class="secure">
+
+                    <span>✓</span>
+
+                    سيتم فتح واتساب لإرسال طلبك مباشرة
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- أسفل الصفحة -->
+        <footer>
+
+            <p>
+                تموينات الشفاء
+            </p>
+
+            <span>
+                أجود المنتجات • أفضل خدمة
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ملف JavaScript -->
+    <script src="order.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,798 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --main: #173b2a;
+    --main-light: #245b40;
+
+    --gold: #c9a227;
+    --gold-light: #e5c85c;
+
+    --dark: #111714;
+
+    --text: #1c241f;
+    --muted: #7a827d;
+
+    --white: #ffffff;
+
+    --background: #f5f4ef;
+
+}
+
+
+body {
+
+    font-family: "Cairo", "Tajawal", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(201, 162, 39, 0.10),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at bottom left,
+            rgba(23, 59, 42, 0.08),
+            transparent 35%
+        ),
+
+        var(--background);
+
+    color: var(--text);
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   الصفحة
+========================================= */
+
+.page {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 25px 30px;
+
+}
+
+
+/* =========================================
+   الهيدر
+========================================= */
+
+.header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 0 30px;
+
+}
+h1{
+  color: red;
+  }
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+.brand-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--gold);
+
+    background: var(--main);
+
+    font-size: 26px;
+
+    box-shadow:
+        0 10px 25px rgba(23, 59, 42, 0.20);
+
+}
+
+
+.brand h1 {
+
+    font-size: 22px;
+
+    color: var(--main);
+
+    font-weight: 800;
+
+}
+
+
+.brand span {
+
+    display: block;
+
+    font-size: 11px;
+
+    color: var(--gold);
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================
+   المحتوى الرئيسي
+========================================= */
+
+.hero {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    min-height: 650px;
+
+}
+
+
+/* =========================================
+   النص
+========================================= */
+
+.hero-content {
+
+    padding: 20px;
+
+}
+
+
+.welcome {
+
+    display: inline-block;
+
+    color: var(--gold);
+
+    background: rgba(201, 162, 39, 0.10);
+
+    border: 1px solid rgba(201, 162, 39, 0.25);
+
+    padding: 7px 16px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.hero h2 {
+
+    font-size: 48px;
+
+    line-height: 1.35;
+
+    font-weight: 800;
+
+    color: var(--dark);
+
+    margin-bottom: 22px;
+
+}
+
+
+.hero h2 strong {
+
+    color: var(--main);
+
+}
+
+
+.hero-content p {
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 2;
+
+    max-width: 470px;
+
+}
+
+
+/* =========================================
+   بطاقة الطلب
+========================================= */
+
+.order-card {
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid rgba(23, 59, 42, 0.08);
+
+    border-radius: 28px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 25px 70px rgba(23, 59, 42, 0.12);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* لمسة ذهبية */
+
+.order-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--main),
+            var(--gold),
+            var(--main)
+        );
+
+}
+
+
+/* =========================================
+   رأس البطاقة
+========================================= */
+
+.card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.card-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--main);
+
+    font-size: 25px;
+
+}
+
+
+.card-top h3 {
+
+    font-size: 22px;
+
+    color: var(--dark);
+
+    font-weight: 800;
+
+}
+
+
+.card-top p {
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   الحقول
+========================================= */
+
+.field {
+
+    margin-bottom: 18px;
+
+}
+
+
+.field label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: var(--text);
+
+}
+
+
+.field label small {
+
+    color: #999;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================
+   Input
+========================================= */
+
+.input-wrapper,
+.textarea-wrapper {
+
+    position: relative;
+
+}
+
+
+.input-wrapper input {
+
+    width: 100%;
+
+    height: 54px;
+
+    border: 1px solid #e2e5e1;
+
+    background: #fafbf9;
+
+    border-radius: 14px;
+
+    padding:
+        0 48px
+        0 15px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: var(--text);
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+.input-icon {
+
+    position: absolute;
+
+    right: 17px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 17px;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================
+   Textarea
+========================================= */
+
+.textarea-wrapper textarea {
+
+    width: 100%;
+
+    min-height: 120px;
+
+    resize: vertical;
+
+    border: 1px solid #e2e5e1;
+
+    background: #fafbf9;
+
+    border-radius: 14px;
+
+    padding:
+        15px
+        15px
+        15px
+        45px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: var(--text);
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+.textarea-icon {
+
+    position: absolute;
+
+    left: 15px;
+
+    top: 16px;
+
+    font-size: 17px;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================
+   Focus
+========================================= */
+
+.input-wrapper input:focus,
+.textarea-wrapper textarea:focus {
+
+    border-color: var(--gold);
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(201, 162, 39, 0.08);
+
+}
+
+
+/* =========================================
+   زر الواتساب
+========================================= */
+
+.send-button {
+
+    width: 100%;
+
+    min-height: 58px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: var(--main);
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 8px;
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s,
+        background 0.25s;
+
+}
+
+
+.send-button:hover {
+
+    background: var(--main-light);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(23, 59, 42, 0.22);
+
+}
+
+
+.send-button:active {
+
+    transform: translateY(0);
+
+}
+
+
+.whatsapp-icon {
+
+    width: 31px;
+
+    height: 31px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    font-size: 15px;
+
+}
+
+
+.arrow {
+
+    font-size: 20px;
+
+    color: var(--gold-light);
+
+}
+
+
+/* =========================================
+   ملاحظة
+========================================= */
+
+.secure {
+
+    text-align: center;
+
+    color: #8a928d;
+
+    font-size: 11px;
+
+    margin-top: 17px;
+
+}
+
+
+.secure span {
+
+    color: #25d366;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+}
+
+
+/* =========================================
+   الفوتر
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 35px 0 15px;
+
+}
+
+
+footer p {
+
+    color: var(--main);
+
+    font-weight: 800;
+
+    font-size: 14px;
+
+}
+
+
+footer span {
+
+    color: #999;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================
+   الجوال
+========================================= */
+
+@media (max-width: 850px) {
+
+    .page {
+
+        padding: 18px;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        min-height: auto;
+
+    }
+
+
+    .hero-content {
+
+        text-align: center;
+
+        padding: 20px 5px 5px;
+
+    }
+
+
+    .hero-content p {
+
+        margin: auto;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .order-card {
+
+        max-width: 600px;
+
+        width: 100%;
+
+        margin: auto;
+
+    }
+
+}
+
+
+/* =========================================
+   الجوال الصغير
+========================================= */
+
+@media (max-width: 480px) {
+
+    .page {
+
+        padding: 12px;
+
+    }
+
+
+    .header {
+
+        padding-bottom: 15px;
+
+    }
+
+
+    .brand-icon {
+
+        width: 45px;
+
+        height: 45px;
+
+        font-size: 21px;
+
+    }
+
+
+    .brand h1 {
+
+        font-size: 18px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .hero-content p {
+
+        font-size: 13px;
+
+    }
+
+
+    .order-card {
+
+        padding: 22px 17px;
+
+        border-radius: 22px;
+
+    }
+
+
+    .card-top h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .send-button {
+
+        font-size: 13px;
+
+    }
+
+}
